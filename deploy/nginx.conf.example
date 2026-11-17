@@ -1,0 +1,10 @@
+# Include inside your existing HTTPS server block. Configure TLS separately.
+location ^~ /personal-agent/ {
+    client_max_body_size 512k;
+    proxy_pass http://127.0.0.1:18864/;
+    proxy_set_header Host $host;
+    proxy_set_header Authorization $http_authorization;
+    proxy_read_timeout 35s;
+    proxy_buffering off;
+    access_log off;
+}

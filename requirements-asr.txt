@@ -1,0 +1,4 @@
+# Optional Apple Silicon ASR environment; core services use Python's standard library.
+# Validated production adapter versions, not a complete transitive lockfile.
+mlx-audio==0.6.4
+mlx==0.32.4

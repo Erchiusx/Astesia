@@ -1,0 +1,9 @@
+{
+  "voice_engine": "gpt_sovits",
+  "gpt_voice_root": "/absolute/path/to/voice-lab",
+  "gpt_python": "/absolute/path/to/tts/venv/bin/python",
+  "voice_output_root": "/absolute/path/to/private/data/voice-work",
+  "tts_reference_audio": "/absolute/path/to/licensed/reference.wav",
+  "tts_reference_text": "/absolute/path/to/licensed/reference.txt",
+  "tts_speed": 0.95
+}

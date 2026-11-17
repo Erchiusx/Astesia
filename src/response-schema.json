@@ -1,0 +1,114 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reply",
+    "spoken_text",
+    "should_notify",
+    "sources",
+    "memory_updates",
+    "valid_until"
+  ],
+  "properties": {
+    "reply": {
+      "type": "string"
+    },
+    "spoken_text": {
+      "type": "string"
+    },
+    "should_notify": {
+      "type": "boolean"
+    },
+    "valid_until": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "memory_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "operation",
+          "key",
+          "category",
+          "text",
+          "evidence",
+          "evidence_source",
+          "evidence_key",
+          "version",
+          "expires_at",
+          "confidence",
+          "reason"
+        ],
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "upsert",
+              "delete"
+            ]
+          },
+          "key": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "profile",
+              "preference",
+              "interaction",
+              "ongoing"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "evidence_source": {
+            "type": "string",
+            "enum": [
+              "user",
+              "memory"
+            ]
+          },
+          "evidence_key": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "expires_at": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

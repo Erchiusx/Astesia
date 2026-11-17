@@ -1,0 +1,23 @@
+name: Checks
+on: [push, pull_request]
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python tools/check_public_tree.py
+      - run: python -m compileall -q src tools manage.py
+      - run: PYTHONPATH=src:tests python -m unittest discover -s tests
+      - run: node --test tests/zello.test.mjs
+  native:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: clang -fsyntax-only -fobjc-arc -framework AppKit -framework EventKit src/calendar_bridge.m
+      - run: clang -fsyntax-only -fobjc-arc -framework AppKit -framework EventKit src/pim_bridge.m

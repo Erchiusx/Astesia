@@ -1,0 +1,9 @@
+{
+  "username": "AGENT_ACCOUNT",
+  "password": "SET_LOCALLY",
+  "issuer": "SET_LOCALLY",
+  "private_key": "/absolute/path/to/private/zello.key",
+  "channel": "PRIVATE_CHANNEL",
+  "receiver": "PHONE_ACCOUNT",
+  "test_only": false
+}

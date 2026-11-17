@@ -1,0 +1,12 @@
+{
+  "policy_version": 1,
+  "enabled": false,
+  "allow_create": true,
+  "title": "Assistant · Recent speech",
+  "keep": 3,
+  "timezone": "UTC",
+  "after": 0,
+  "mirror_id": "REPLACE_WITH_UUID",
+  "folder_id": "",
+  "note_id": ""
+}

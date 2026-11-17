@@ -1,0 +1,12 @@
+{
+  "host": "127.0.0.1",
+  "port": 18864,
+  "database": "/absolute/path/to/private/data/state.sqlite3",
+  "client_token": "GENERATE_AT_INIT",
+  "worker_token": "GENERATE_AT_INIT",
+  "memory_authority": "mac",
+  "profile": {"timezone": "UTC", "calendar_connected": false},
+  "hourly_enabled": false,
+  "singapore_weather_enabled": false,
+  "routine_wind_down_minutes": null
+}

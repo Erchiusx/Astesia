@@ -1,0 +1,32 @@
+{
+  "base_url": "https://agent.example.com/personal-agent",
+  "worker_token": "COPY_FROM_PRIVATE_BROKER_CONFIG",
+  "state_dir": "/absolute/path/to/private/data",
+  "codex": "/absolute/path/to/codex",
+  "codex_home": "/absolute/path/to/private/codex-home",
+  "instructions": "/absolute/path/to/private/config/assistant-instructions.txt",
+  "reasoning_effort": "low",
+  "interactive_fast": true,
+  "memory_authority": "mac",
+  "pim_tools_enabled": false,
+  "wellness_enabled": false,
+  "zello_duplex_enabled": false,
+  "voice_input_engine": "qwen3_asr",
+  "voice_auto_submit": false,
+  "voice_asr_python": "/absolute/path/to/asr/venv/bin/python",
+  "voice_asr_model_dir": "/absolute/path/to/models/qwen-asr",
+  "qwen_asr_config": "/absolute/path/to/private/config/qwen-asr.json",
+  "voice_inbox_dir": "/absolute/path/to/private/data/voice-inbox",
+  "voice_engine": "macos",
+  "voice": "Tingting",
+  "voice_rate": 175,
+  "voice_sample_rate": 48000,
+  "voice_bitrate": 256,
+  "voice_greeting": "",
+  "speech_archive": {
+    "enabled": false
+  },
+  "persist_interactive_sessions": true,
+  "speech_tool_enabled": true,
+  "reuse_conversation_sessions": true
+}

@@ -1,0 +1,10 @@
+{
+  "model_dir": "/absolute/path/to/models/qwen-asr",
+  "required_volume": null,
+  "volume_uuid": null,
+  "hf_home": "/absolute/path/to/model-cache",
+  "hf_hub_cache": "/absolute/path/to/model-cache/hub",
+  "hf_xet_cache": "/absolute/path/to/model-cache/xet",
+  "max_tokens": 1024,
+  "language": null
+}
